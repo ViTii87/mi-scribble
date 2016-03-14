@@ -85,4 +85,16 @@ public class DrawDemo
     {
         myCanvas.erase();
     }
+    
+    /**
+     * Dibuja un triangulo equilatero.
+     */
+    public void drawTriangle(int coordenadaX, int coordenadaY){
+        Pen pen = new Pen(coordenadaX, coordenadaY, myCanvas);
+        pen.setColor(new Color(0, 255, 0));
+        for(int i = 1; i<4; i++) {
+            pen.move(100);
+            pen.turn(120);
+        }
+    }
 }
