@@ -120,4 +120,15 @@ public class DrawDemo
             pen.turn(360/n);
         }
     }
+    
+    /**
+     * Dibuja una espiral en pantalla.
+     */
+    public void drawSpiral(){
+        Pen pen = new Pen(250, 200, myCanvas);
+        for(int i = 1; i<40; i++) {
+            pen.move(10+(i*6));
+            pen.turn(90);
+        }
+    }
 }
