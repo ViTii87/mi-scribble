@@ -109,4 +109,15 @@ public class DrawDemo
             pen.turn(72);
         }
     }
+    
+    /**
+     * Dibuja un poligono por pantalla pasado el lado por parametro.
+     */
+    public void drawPoligon(int n){
+        Pen pen = new Pen(100, 150, myCanvas);
+        for(int i = 1; i<=n; i++) {
+            pen.move(100);
+            pen.turn(360/n);
+        }
+    }
 }
